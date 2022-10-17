@@ -16,7 +16,8 @@ public class DefaultDataProvider implements DataProvider {
     private List<ParentChildPair> pairList;
 
     public DefaultDataProvider(){
-        this(System.getProperty("user.dir") + "\\src\\main\\resources\\Test.txt");
+//        this(System.getProperty("user.dir") + "\\src\\main\\resources\\Test.txt");
+        this(System.getProperty("user.dir") + "\\Test.txt");
     }
     public DefaultDataProvider(String dataAddress){
         this(dataAddress, "\n", " ");
@@ -29,7 +30,8 @@ public class DefaultDataProvider implements DataProvider {
 
     @Override
     public void refreshDataSource(){
-        this.refreshDataSource(System.getProperty("user.dir") + "\\src\\main\\resources\\Test.txt");
+//        this.refreshDataSource(System.getProperty("user.dir") + "\\src\\main\\resources\\Test.txt");
+        this.refreshDataSource(System.getProperty("user.dir") + "\\Test.txt");
     }
 
     @Override
